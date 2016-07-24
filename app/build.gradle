@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 2
+    compileSdkVersion 23
     buildToolsVersion "21.1.2"
 
     defaultConfig {
@@ -19,7 +19,7 @@ android {
         }
     }
     buildTypes.each {
-        it.buildConfigField 'String','f31ec3f80f8f85b0028a2736b0fe5d52', MyOpenWeatherMapApiKey
+        it.buildConfigField 'String','OPEN_WEATHER_MAP_API_KEY', ''
     }
     
 }
